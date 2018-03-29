@@ -1,9 +1,12 @@
 %define upstream_name    Exporter-Tiny
 %define upstream_version 1.000000
 
+# Avoid nasty build dependency loop
+%define dont_gprintify 1
+
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    1
+Release:    2
 
 Summary:    Shortcut for Exporter::Tiny
 License:    GPL+ or Artistic
