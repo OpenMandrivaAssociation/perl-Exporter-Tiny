@@ -1,17 +1,17 @@
 %define upstream_name    Exporter-Tiny
-%define upstream_version 1.000000
+%define upstream_version 1.002001
 
 # Avoid nasty build dependency loop
 %define dont_gprintify 1
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    3
+Release:    1
 
 Summary:    Shortcut for Exporter::Tiny
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        http://search.cpan.org/dist/%{upstream_name}
+Url:        http://metacpan.org/pod/Exporter::Tiny
 Source0:    http://www.cpan.org/modules/by-module/Exporter/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl-devel
