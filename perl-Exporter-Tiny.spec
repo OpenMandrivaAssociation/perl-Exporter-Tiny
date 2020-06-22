@@ -1,5 +1,5 @@
 %define upstream_name    Exporter-Tiny
-%define upstream_version 1.002001
+%define upstream_version 1.002002
 
 # Avoid nasty build dependency loop
 %define dont_gprintify 1
