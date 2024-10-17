@@ -11,7 +11,7 @@ Release:    1
 Summary:    Shortcut for Exporter::Tiny
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        http://metacpan.org/pod/Exporter::Tiny
+Url:        https://metacpan.org/pod/Exporter::Tiny
 Source0:    http://www.cpan.org/modules/by-module/Exporter/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl-devel
