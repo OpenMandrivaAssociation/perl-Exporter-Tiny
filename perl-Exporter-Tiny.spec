@@ -1,18 +1,16 @@
 %define upstream_name    Exporter-Tiny
-%define upstream_version 1.006002
-
 # Avoid nasty build dependency loop
 %define dont_gprintify 1
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    2
+Version:    1.006002
+Release:    3
 
 Summary:    Shortcut for Exporter::Tiny
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://metacpan.org/pod/Exporter::Tiny
-Source0:    http://www.cpan.org/modules/by-module/Exporter/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/Exporter/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl-devel
@@ -40,7 +38,7 @@ installation of coderefs into the target package) as method calls, which
 means they can be overridden to provide interesting behaviour.
 
 %prep
-%setup -qn %{upstream_name}-%{upstream_version}
+%setup -qn %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
