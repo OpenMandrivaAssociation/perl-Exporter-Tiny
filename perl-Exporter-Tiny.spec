@@ -3,8 +3,8 @@
 %define dont_gprintify 1
 
 Name:       perl-%{upstream_name}
-Version:    1.006002
-Release:    3
+Version:    1.006003
+Release:    1
 
 Summary:    Shortcut for Exporter::Tiny
 License:    GPL+ or Artistic
@@ -38,7 +38,7 @@ installation of coderefs into the target package) as method calls, which
 means they can be overridden to provide interesting behaviour.
 
 %prep
-%setup -qn %{upstream_name}-%{version}
+%setup -qn %{upstream_name}-%{version} -n Exporter-Tiny-1.006003
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
